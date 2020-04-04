@@ -2,6 +2,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "gregtech:items/metaitems/shape.small_pipe"
+    "layer0": "gregtech:items/metaitems/shape.small.pipe"
   }
 }

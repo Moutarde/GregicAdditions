@@ -2,6 +2,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "gregtech:items/metaitems/shape.shovel_head"
+    "layer0": "gregtech:items/metaitems/shape.shovel.head"
   }
 }

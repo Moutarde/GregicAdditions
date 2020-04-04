@@ -2,6 +2,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "gregtech:items/metaitems/shape.saw_blade"
+    "layer0": "gregtech:items/metaitems/shape.saw.blade"
   }
 }

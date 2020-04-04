@@ -39,7 +39,7 @@ public class GATextures {
 
         FUSION_TEXTURE = new SimpleCubeRenderer("casings/fusion/machine_casing_fusion_glass");
 
-        ACTIVE_FUSION_TEXTURE = new SimpleCubeRenderer("gregtech:casings/fusion/machine_casing_fusion_glass_yellow");
+        ACTIVE_FUSION_TEXTURE = new SimpleCubeRenderer("gregtech:casings/fusion/machine.casing.fusion.glass.yellow");
 
         COKE_OVEN_OVERLAY = new OrientedOverlayRenderer("machines/ga_coke_oven", new OverlayFace[]{OverlayFace.FRONT});
 
