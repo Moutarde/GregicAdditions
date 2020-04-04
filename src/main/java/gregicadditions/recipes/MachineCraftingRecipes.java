@@ -45,7 +45,6 @@ public class MachineCraftingRecipes {
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_luv"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_zpm"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_uv"));
-        ModHandler.removeRecipeByName(new ResourceLocation("gregtech:transformer_max"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:coke_oven"));
         ModHandler.removeRecipeByName(new ResourceLocation("gregtech:coke_oven_hatch"));
 
