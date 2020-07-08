@@ -490,10 +490,10 @@ gtadditions.machine.rock_breaker.lv.name=Basic Rock Breaker
 gtadditions.machine.rock_breaker.mv.name=Advanced Rock Breaker
 gtadditions.machine.rock_breaker.hv.name=Advanced Rock Breaker II
 gtadditions.machine.rock_breaker.ev.name=Advanced Rock Breaker III
-gtadditions.machine.rock_breaker.iv.name==Advanced Rock Breaker IV
-gtadditions.machine.rock_breaker.luv.name==Advanced Rock Breaker V
-gtadditions.machine.rock_breaker.zpm.name==Advanced Rock Breaker VI
-gtadditions.machine.rock_breaker.uv.name==Advanced Rock Breaker VII
+gtadditions.machine.rock_breaker.iv.name=Advanced Rock Breaker IV
+gtadditions.machine.rock_breaker.luv.name=Advanced Rock Breaker V
+gtadditions.machine.rock_breaker.zpm.name=Advanced Rock Breaker VI
+gtadditions.machine.rock_breaker.uv.name=Advanced Rock Breaker VII
 
 gtadditions.machine.fisher_lv.name=Basic Fisher
 gtadditions.machine.fisher_mv.name=Advanced Fisher
