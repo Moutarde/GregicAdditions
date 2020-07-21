@@ -1132,7 +1132,7 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.plate, Materials.Europium, 4),
                 MetaItems.FIELD_GENERATOR_LUV.getStackForm(2),
                 MetaItems.HIGH_POWER_INTEGRATED_CIRCUIT.getStackForm(48),
-                OreDictUnifier.get(OrePrefix.wireGtDouble, Tier.Superconductor, 32))
+                OreDictUnifier.get(OrePrefix.wireGtDouble, Tier.Ultimate, 32))
                 .input(OrePrefix.circuit, Tier.Superconductor)
                 .input(OrePrefix.circuit, Tier.Superconductor)
                 .input(OrePrefix.circuit, Tier.Superconductor)
@@ -1150,7 +1150,7 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.plate, Materials.Americium, 4),
                 MetaItems.FIELD_GENERATOR_ZPM.getStackForm(2),
                 MetaItems.HIGH_POWER_INTEGRATED_CIRCUIT.getStackForm(64),
-                OreDictUnifier.get(OrePrefix.wireGtQuadruple, Tier.Superconductor, 32)).fluidInputs(
+                OreDictUnifier.get(OrePrefix.wireGtQuadruple, Tier.Ultimate, 32)).fluidInputs(
                 Materials.SolderingAlloy.getFluid(2880))
                 .outputs(GATileEntities.FUSION_REACTOR[2].getStackForm()).duration(1000).EUt(90000)
                 .buildAndRegister();
