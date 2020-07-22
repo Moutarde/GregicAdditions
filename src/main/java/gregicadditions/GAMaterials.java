@@ -27,16 +27,17 @@ public class GAMaterials {
     public static IngotMaterial IVSuperconductorBase;
     public static IngotMaterial LuVSuperconductorBase;
     public static IngotMaterial ZPMSuperconductorBase;
+    public static IngotMaterial UVSuperconductorBase;
     public static BasicMaterial MVSuperconductor;
     public static BasicMaterial HVSuperconductor;
     public static BasicMaterial EVSuperconductor;
     public static BasicMaterial IVSuperconductor;
     public static BasicMaterial LuVSuperconductor;
     public static BasicMaterial ZPMSuperconductor;
+    public static BasicMaterial UVSuperconductor;
     public static IngotMaterial Enderium;
     public static DustMaterial AluminoSilicateWool;
     public static DustMaterial MicaPulp;
-    public static IngotMaterial Ultima;
     public static FluidMaterial IronChloride;
     public static DustMaterial QuartzSand;
     public static DustMaterial Massicot;
@@ -71,16 +72,17 @@ public class GAMaterials {
         IVSuperconductorBase = new IngotMaterial(985, "iv_superconductor_base", 0x300030, MaterialIconSet.SHINY, 1, ImmutableList.of(new MaterialStack(Materials.Vanadium, 1), new MaterialStack(Materials.Indium, 3)), STD_METAL, null, 5200);
         LuVSuperconductorBase = new IngotMaterial(984, "luv_superconductor_base", 0x7a3c00, MaterialIconSet.SHINY, 1, ImmutableList.of(new MaterialStack(Materials.Indium, 4), new MaterialStack(Materials.Bronze, 8), new MaterialStack(Materials.Barium, 2), new MaterialStack(Materials.Titanium, 1), new MaterialStack(Materials.Oxygen, 14)), STD_METAL, null, 6000);
         ZPMSuperconductorBase = new IngotMaterial(983, "zpm_superconductor_base", 0x111111, MaterialIconSet.SHINY, 1, ImmutableList.of(new MaterialStack(Materials.Naquadah, 4), new MaterialStack(Materials.Indium, 2), new MaterialStack(Materials.Palladium, 6), new MaterialStack(Materials.Osmium, 1)), STD_METAL, null, 8100);
+        UVSuperconductorBase = new IngotMaterial(973, "uv_superconductor_base", 0x443d4f, MaterialIconSet.SHINY, 3, ImmutableList.of(new MaterialStack(Materials.TinAlloy, 1), new MaterialStack(Materials.Ultimet, 1), new MaterialStack(Materials.Magnalium, 1), new MaterialStack(Materials.BlueSteel, 1), new MaterialStack(Materials.VanadiumSteel, 1), new MaterialStack(Materials.NiobiumNitride, 1), new MaterialStack(Materials.NaquadahAlloy, 1)), EXT2_METAL | Material.MatFlags.DISABLE_DECOMPOSITION, null, 9000);
         MVSuperconductor = new BasicMaterial(982, "mv_superconductor", 0x535353, MaterialIconSet.SHINY);
         HVSuperconductor = new BasicMaterial(981, "hv_superconductor", 0x4a2400, MaterialIconSet.SHINY);
         EVSuperconductor = new BasicMaterial(980, "ev_superconductor", 0x005800, MaterialIconSet.SHINY);
         IVSuperconductor = new BasicMaterial(979, "iv_superconductor", 0x300030, MaterialIconSet.SHINY);
         LuVSuperconductor = new BasicMaterial(978, "luv_superconductor", 0x7a3c00, MaterialIconSet.SHINY);
         ZPMSuperconductor = new BasicMaterial(977, "zpm_superconductor", 0x111111, MaterialIconSet.SHINY);
+        UVSuperconductor = new BasicMaterial(962, "uv_superconductor", 0x443d4f, MaterialIconSet.SHINY);
         Enderium = new IngotMaterial(976, "enderium", 0x23524a, MaterialIconSet.METALLIC, 3, ImmutableList.of(new MaterialStack(Materials.Lead, 3), new MaterialStack(Materials.Platinum, 1), new MaterialStack(Materials.EnderPearl, 1)), EXT_METAL | Material.MatFlags.DISABLE_DECOMPOSITION, null, 8.0F, 3.0F, 1280, 4500);
         AluminoSilicateWool = new DustMaterial(975, "alumino_silicate_wool", 0xbbbbbb, MaterialIconSet.SAND, 1, ImmutableList.of(), Material.MatFlags.DISABLE_DECOMPOSITION);
         MicaPulp = new DustMaterial(974, "mica_based", 0x917445, MaterialIconSet.SAND, 1, ImmutableList.of(), Material.MatFlags.DISABLE_DECOMPOSITION);
-        Ultima = new IngotMaterial(973, "ultima", 0x443d4f, MaterialIconSet.SHINY, 3, ImmutableList.of(new MaterialStack(Materials.TinAlloy, 1), new MaterialStack(Materials.Ultimet, 1), new MaterialStack(Materials.Magnalium, 1), new MaterialStack(Materials.BlueSteel, 1), new MaterialStack(Materials.VanadiumSteel, 1), new MaterialStack(Materials.NiobiumNitride, 1), new MaterialStack(Materials.NaquadahAlloy, 1)), EXT2_METAL | Material.MatFlags.DISABLE_DECOMPOSITION, null, 9000);
         IronChloride = new FluidMaterial(972, "iron_chloride", 0x060b0b, MaterialIconSet.FLUID, ImmutableList.of(new MaterialStack(Materials.Iron, 1), new MaterialStack(Materials.Chlorine, 3)), Material.MatFlags.DECOMPOSITION_BY_ELECTROLYZING);
         QuartzSand = new DustMaterial(971, "sand", 0xd2cfbc, MaterialIconSet.SAND, 1, ImmutableList.of(), Material.MatFlags.DISABLE_DECOMPOSITION);
         Massicot = new DustMaterial(970, "massicot", 8943149, MaterialIconSet.SAND, 1, ImmutableList.of(new MaterialStack(Materials.Lead, 1), new MaterialStack(Materials.Oxygen, 1)), 0);
@@ -97,7 +99,7 @@ public class GAMaterials {
         IVSuperconductorBase.setCableProperties(8192, 2, 2);
         LuVSuperconductorBase.setCableProperties(32768, 4, 2);
         ZPMSuperconductorBase.setCableProperties(131072, 4, 2);
-        Ultima.setCableProperties(524288, 3, 2);
+        UVSuperconductorBase.setCableProperties(524288, 3, 2);
 
         Materials.NiobiumTitanium.setFluidPipeProperties(450, 2900, true);
         Enderium.setFluidPipeProperties(650, 1500, true);

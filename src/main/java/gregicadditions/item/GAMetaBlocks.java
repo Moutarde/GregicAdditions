@@ -40,6 +40,7 @@ public class GAMetaBlocks {
         MetaBlocks.CABLE.addCableMaterial(GAMaterials.IVSuperconductor, new WireProperties(8192, 4, 0));
         MetaBlocks.CABLE.addCableMaterial(GAMaterials.LuVSuperconductor, new WireProperties(32768, 8, 0));
         MetaBlocks.CABLE.addCableMaterial(GAMaterials.ZPMSuperconductor, new WireProperties(131072, 8, 0));
+        MetaBlocks.CABLE.addCableMaterial(GAMaterials.UVSuperconductor, new WireProperties(524288, 16, 0));
     }
 
     @SideOnly(Side.CLIENT)
