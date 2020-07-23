@@ -1148,7 +1148,7 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.plate, Materials.Americium, 4),
                 MetaItems.FIELD_GENERATOR_ZPM.getStackForm(2),
                 MetaItems.HIGH_POWER_INTEGRATED_CIRCUIT.getStackForm(64),
-                OreDictUnifier.get(OrePrefix.wireGtQuadruple, GAMaterials.UVSuperconductor, 32)).fluidInputs(
+                OreDictUnifier.get(OrePrefix.wireGtOctal, GAMaterials.ZPMSuperconductor, 32)).fluidInputs(
                 Materials.SolderingAlloy.getFluid(2880))
                 .outputs(GATileEntities.FUSION_REACTOR[2].getStackForm()).duration(1000).EUt(90000)
                 .buildAndRegister();
