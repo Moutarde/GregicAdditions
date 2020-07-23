@@ -1130,7 +1130,7 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.plate, Materials.Europium, 4),
                 MetaItems.FIELD_GENERATOR_LUV.getStackForm(2),
                 MetaItems.HIGH_POWER_INTEGRATED_CIRCUIT.getStackForm(48),
-                OreDictUnifier.get(OrePrefix.wireGtDouble, GAMaterials.UVSuperconductor, 32))
+                OreDictUnifier.get(OrePrefix.wireGtDouble, GAMaterials.ZPMSuperconductor, 64))
                 .input(OrePrefix.circuit, Tier.Superconductor)
                 .input(OrePrefix.circuit, Tier.Superconductor)
                 .input(OrePrefix.circuit, Tier.Superconductor)
