@@ -973,7 +973,6 @@ public class GARecipeAddition {
                 .buildAndRegister();
 
         GARecipeMaps.ASSEMBLY_LINE_RECIPES.recipeBuilder().inputs(
-                OreDictUnifier.get(OrePrefix.frameGt, Materials.HSSE, 1),
                 OreDictUnifier.get(OrePrefix.plate, Materials.HSSE, 6),
                 MetaItems.QUANTUM_STAR.getStackForm(4),
                 MetaItems.EMITTER_ZPM.getStackForm(4),
