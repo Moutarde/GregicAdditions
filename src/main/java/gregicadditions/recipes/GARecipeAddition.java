@@ -352,6 +352,8 @@ public class GARecipeAddition {
         ModHandler.addShapedRecipe("iridium_alloy_plate", MetaItems.INGOT_IRIDIUM_ALLOY.getStackForm(), "AIA", "IDI", "AIA", 'A', MetaItems.ADVANCED_ALLOY_PLATE.getStackForm(), 'I', "plateIridium", 'D', "plateDiamond");
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(40).EUt(8).inputs(MetaItems.ADVANCED_ALLOY_PLATE.getStackForm(4)).input(OrePrefix.plate, Materials.Iridium, 4).input(OrePrefix.plate, Materials.Diamond).outputs(MetaItems.INGOT_IRIDIUM_ALLOY.getStackForm()).buildAndRegister();
 
+        ModHandler.addShapelessRecipe("ultima", OreDictUnifier.get(OrePrefix.dust, GAMaterials.Ultima, 4), "dustTinAlloy", "dustUltimet", "dustMagnalium", "dustBlueSteel", "dustVanadiumSteel", "dustSterlingSilver", "dustHsss", "dustNaquadahAlloy");
+
         //Machine Component Recipes
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(40).EUt(30).input(OrePrefix.circuit, Tier.Basic, 4).input(OrePrefix.dust, Materials.EnderPearl).input(OrePrefix.wireGtSingle, Materials.Osmium, 4).outputs(MetaItems.FIELD_GENERATOR_LV.getStackForm()).buildAndRegister();
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(40).EUt(30).input(OrePrefix.circuit, Tier.Basic, 4).input(OrePrefix.gem, Materials.EnderPearl).input(OrePrefix.wireGtSingle, Materials.Osmium, 4).outputs(MetaItems.FIELD_GENERATOR_LV.getStackForm()).buildAndRegister();
@@ -695,10 +697,10 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.stickLong, GAMaterials.Neutronium, 4),
                 OreDictUnifier.get(OrePrefix.ring, GAMaterials.Neutronium, 4),
                 OreDictUnifier.get(OrePrefix.valueOf("round"), GAMaterials.Neutronium, 16),
-                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.UVSuperconductorBase, 64),
-                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.UVSuperconductorBase, 64),
-                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.UVSuperconductorBase, 64),
-                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.UVSuperconductorBase, 64),
+                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.Ultima, 64),
+                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.Ultima, 64),
+                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.Ultima, 64),
+                OreDictUnifier.get(OrePrefix.wireFine, GAMaterials.Ultima, 64),
                 OreDictUnifier.get(OrePrefix.cableGtQuadruple, Materials.NiobiumTitanium, 2)).fluidInputs(
                 Materials.SolderingAlloy.getFluid(1296),
                 Materials.Lubricant.getFluid(2000))
@@ -1032,7 +1034,7 @@ public class GARecipeAddition {
                 MetaItems.SMD_TRANSISTOR.getStackForm(32),
                 MetaItems.SMD_DIODE.getStackForm(16),
                 MetaItems.RANDOM_ACCESS_MEMORY.getStackForm(16),
-                OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.UVSuperconductorBase, 32),
+                OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.Ultima, 32),
                 OreDictUnifier.get(OrePrefix.foil, Materials.SiliconeRubber, 64)).fluidInputs(
                 Materials.SolderingAlloy.getFluid(2880), Materials.Water.getFluid(10000))
                 .outputs(MetaItems.WETWARE_MAINFRAME_MAX.getStackForm()).duration(2000).EUt(300000)
@@ -1129,7 +1131,7 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.plate, Materials.Europium, 4),
                 MetaItems.FIELD_GENERATOR_LUV.getStackForm(2),
                 MetaItems.HIGH_POWER_INTEGRATED_CIRCUIT.getStackForm(48),
-                OreDictUnifier.get(OrePrefix.wireGtDouble, GAMaterials.ZPMSuperconductor, 64))
+                OreDictUnifier.get(OrePrefix.wireGtQuadruple, GAMaterials.ZPMSuperconductor, 32))
                 .input(OrePrefix.circuit, Tier.Superconductor)
                 .input(OrePrefix.circuit, Tier.Superconductor)
                 .input(OrePrefix.circuit, Tier.Superconductor)
@@ -1147,7 +1149,7 @@ public class GARecipeAddition {
                 OreDictUnifier.get(OrePrefix.plate, Materials.Americium, 4),
                 MetaItems.FIELD_GENERATOR_ZPM.getStackForm(2),
                 MetaItems.HIGH_POWER_INTEGRATED_CIRCUIT.getStackForm(64),
-                OreDictUnifier.get(OrePrefix.wireGtOctal, GAMaterials.ZPMSuperconductor, 32)).fluidInputs(
+                OreDictUnifier.get(OrePrefix.wireGtOctal, GAMaterials.ZPMSuperconductor, 64)).fluidInputs(
                 Materials.SolderingAlloy.getFluid(2880))
                 .outputs(GATileEntities.FUSION_REACTOR[2].getStackForm()).duration(1000).EUt(90000)
                 .buildAndRegister();
@@ -1290,7 +1292,7 @@ public class GARecipeAddition {
         RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(400).EUt(480).input(OrePrefix.dust, Materials.Vanadium).input(OrePrefix.dust, Materials.Indium, 3).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.IVSuperconductorBase, 4)).buildAndRegister();
         RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(2400).EUt(1920).input(OrePrefix.dust, Materials.Indium, 4).input(OrePrefix.dust, Materials.Bronze, 8).input(OrePrefix.dust, Materials.Barium, 2).input(OrePrefix.dust, Materials.Titanium).fluidInputs(Materials.Oxygen.getFluid(14000)).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.LuVSuperconductorBase, 29)).buildAndRegister();
         RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(1200).EUt(1920).input(OrePrefix.dust, Materials.Naquadah, 4).input(OrePrefix.dust, Materials.Indium, 2).input(OrePrefix.dust, Materials.Palladium, 6).input(OrePrefix.dust, Materials.Osmium).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.ZPMSuperconductorBase, 13)).buildAndRegister();
-        RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(1200).EUt(1920).input(OrePrefix.dust, Materials.NaquadahEnriched, 4).input(OrePrefix.dust, Materials.Ultimet, 2).input(OrePrefix.dust, Materials.HSSS, 6).input(OrePrefix.dust, Materials.SterlingSilver).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.UVSuperconductorBase, 13)).buildAndRegister();
+        RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(1200).EUt(1920).input(OrePrefix.dust, Materials.NaquadahAlloy, 6).input(OrePrefix.dust, Materials.Ultimet, 4).input(OrePrefix.dust, Materials.Americium, 2).input(OrePrefix.dust, Materials.Tritanium,2).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.UVSuperconductorBase, 13)).buildAndRegister();
         RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(400).EUt(8).input(OrePrefix.dust, Materials.Lead, 3).input(OrePrefix.dust, Materials.Platinum).input(OrePrefix.dust, Materials.EnderPearl, 4).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.Enderium, 4)).buildAndRegister();
 
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(300).EUt(120).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.MVSuperconductorBase, 3), OreDictUnifier.get(OrePrefix.pipeTiny, Materials.StainlessSteel, 2), MetaItems.ELECTRIC_PUMP_MV.getStackForm(2)).fluidInputs(Materials.Nitrogen.getFluid(2000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.MVSuperconductor, 3)).buildAndRegister();
@@ -1299,8 +1301,7 @@ public class GARecipeAddition {
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(300).EUt(1920).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.IVSuperconductorBase, 6), OreDictUnifier.get(OrePrefix.pipeTiny, Materials.NiobiumTitanium, 4), MetaItems.ELECTRIC_PUMP_IV.getStackForm()).fluidInputs(Materials.Nitrogen.getFluid(4000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.IVSuperconductor, 6)).buildAndRegister();
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(350).EUt(7680).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.LuVSuperconductorBase, 8), OreDictUnifier.get(OrePrefix.pipeTiny, GAMaterials.Enderium, 5), MetaItems.ELECTRIC_PUMP_LUV.getStackForm()).fluidInputs(Materials.Nitrogen.getFluid(6000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.LuVSuperconductor, 8)).buildAndRegister();
         RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(400).EUt(30720).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.ZPMSuperconductorBase, 16), OreDictUnifier.get(OrePrefix.pipeTiny, Materials.Naquadah, 6), MetaItems.ELECTRIC_PUMP_ZPM.getStackForm()).fluidInputs(Materials.Nitrogen.getFluid(8000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.ZPMSuperconductor, 16)).buildAndRegister();
-        RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(400).EUt(30720).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.UVSuperconductorBase, 16), OreDictUnifier.get(OrePrefix.pipeTiny, Materials.NiobiumTitanium, 6), MetaItems.ELECTRIC_PUMP_UV.getStackForm()).fluidInputs(Materials.Nitrogen.getFluid(8000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.UVSuperconductor, 16)).buildAndRegister();
-        RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(500).EUt(122880).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.UVSuperconductor, 32), OreDictUnifier.get(OrePrefix.pipeTiny, GAMaterials.Neutronium, 7), MetaItems.ELECTRIC_PUMP_UV.getStackForm()).fluidInputs(Materials.Nitrogen.getFluid(10000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, Tier.Superconductor, 32)).buildAndRegister();
+        RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder().duration(500).EUt(122880).inputs(OreDictUnifier.get(OrePrefix.wireGtSingle, GAMaterials.UVSuperconductorBase, 32), OreDictUnifier.get(OrePrefix.pipeTiny, GAMaterials.Neutronium, 7), MetaItems.ELECTRIC_PUMP_UV.getStackForm()).fluidInputs(Materials.Nitrogen.getFluid(10000)).outputs(OreDictUnifier.get(OrePrefix.wireGtSingle, Tier.Superconductor, 32)).buildAndRegister();
 
         //GTNH Coils
         RecipeMaps.MIXER_RECIPES.recipeBuilder().duration(400).EUt(8).input(OrePrefix.dust, Materials.Mica, 3).input(OrePrefix.dust, Materials.RawRubber, 2).outputs(OreDictUnifier.get(OrePrefix.dust, GAMaterials.MicaPulp, 4)).buildAndRegister();

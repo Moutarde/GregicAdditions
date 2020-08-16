@@ -94,7 +94,7 @@ public enum GACraftingComponents {
                 case 7:
                     return new UnificationEntry(OrePrefix.cableGtSingle, Materials.Naquadah);
                 case 8:
-                    return new UnificationEntry(OrePrefix.wireGtSingle, MarkerMaterials.Tier.Ultimate);
+                    return new UnificationEntry(OrePrefix.cableGtSingle, GAMaterials.Ultima);
                 default:
                     return new UnificationEntry(OrePrefix.wireGtSingle, MarkerMaterials.Tier.Superconductor);
             }
