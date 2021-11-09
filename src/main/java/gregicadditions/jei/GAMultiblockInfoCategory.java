@@ -2,20 +2,24 @@ package gregicadditions.jei;
 
 import com.google.common.collect.Lists;
 import gregtech.integration.jei.multiblock.MultiblockInfoRecipeWrapper;
+import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.IJeiHelpers;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.gui.IDrawable;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IRecipeCategory;
+import mezz.jei.gui.GuiHelper;
 import mezz.jei.gui.recipes.RecipeLayout;
 import net.minecraft.client.resources.I18n;
 
 public class GAMultiblockInfoCategory implements IRecipeCategory<MultiblockInfoRecipeWrapper> {
     private final IDrawable background;
+    private IGuiHelper guiHelper;
 
     public GAMultiblockInfoCategory(IJeiHelpers helpers) {
         this.background = helpers.getGuiHelper().createBlankDrawable(176, 166);
+        this.guiHelper = helpers.getGuiHelper();
     }
 
     public static void registerRecipes(IModRegistry registry) {
@@ -46,7 +50,7 @@ public class GAMultiblockInfoCategory implements IRecipeCategory<MultiblockInfoR
     }
 
     public void setRecipe(IRecipeLayout recipeLayout, MultiblockInfoRecipeWrapper recipeWrapper, IIngredients ingredients) {
-        recipeWrapper.setRecipeLayout((RecipeLayout) recipeLayout);
+        recipeWrapper.setRecipeLayout((RecipeLayout) recipeLayout, this.guiHelper);
     }
 }
 
